@@ -31,18 +31,3 @@ set @sql_create=''
 	CLOSE COUNTRY
 	DEALLOCATE COUNTRY;
 END
-
-CREATE TABLE [dbo].[CUSTOMERS_WORLD](
-	[Name] [varchar](15) PRIMARY KEY,
-	[CUST_I] [varchar](10) NOT NULL,
-	[Open_Dt] [int] NOT NULL,
-	[Consult_Dt] [int] NULL,
-	[VAC_ID] [varchar](4) NULL,
-	[DR_Name] [varchar](15) NULL,
-	[State] [varchar](4) NULL,
-	[Country] [varchar](4) NULL,
-	[DOB] [int] NULL,
-	[Flag] [varchar](2) NULL
-)
-
-SELECT * FROM [CUSTOMERS_WORLD]
